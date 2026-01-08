@@ -1,0 +1,140 @@
+.app-container {
+  display: flex;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  /* margin-left: 260px; */
+}
+/* ================= HEADER ================= */
+.header {
+  background: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  color: #e65100;
+}
+
+.hotel-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #e65100;
+}
+
+.table-text {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ================= SEARCH BAR ================= */
+.search-wrapper {
+  position: relative;
+  width: 480px;
+  max-width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #555;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #e65100;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(230, 81, 0, 0.15);
+}
+
+/* ================= BUTTONS ================= */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: #eee;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  background: #ddd;
+}
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #e65100;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .search-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search-wrapper {
+    order: 3;
+    width: 100%;
+  }
+}

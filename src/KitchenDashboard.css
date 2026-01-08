@@ -1,0 +1,236 @@
+.kitchen-wrapper {
+  padding: 20px;
+  width: 60%;
+  position: relative;
+  left: 30%;
+}
+
+/* Header */
+.header h2 {
+  font-size: 24px;
+  color: #222;
+}
+.header p {
+  color: #666;
+  /* margin-top: 2px; */
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.stat-box {
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+.stat-box h3 {
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.active { color: #ff6a00; }
+.preparing { color: #007bff; }
+.completed { color: #28a745; }
+
+/* Section Title */
+.section-title {
+  margin: 20px 0 10px;
+  color: #222;
+  font-size: 20px;
+}
+
+/* Empty Box */
+.empty-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #777;
+}
+.empty-icon {
+  width: 48px;
+  height: 48px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Order Grid */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Order Card */
+.order-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-top h4 {
+  margin: 0;
+  color: #222;
+}
+
+.order-top p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px solid;
+  text-transform: capitalize;
+}
+
+.status-pending {
+  background: #fff6cc;
+  color: #b88a00;
+  border-color: #e6d488;
+}
+
+.status-accepted {
+  background: #dce9ff;
+  color: #0056c7;
+  border-color: #a9c7f5;
+}
+
+.status-preparing {
+  background: #ffe3cc;
+  color: #c75a00;
+  border-color: #f2b88a;
+}
+
+.status-ready {
+  background: #dff7d9;
+  color: #267a16;
+  border-color: #a7e69c;
+}
+
+.status-served {
+  background: #eee;
+  color: #666;
+  border-color: #ccc;
+}
+
+.time-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #777;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.time-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Items */
+.order-items {
+  margin: 16px 0;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.spice {
+  color: #777;
+  text-transform: capitalize;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.blue { background: #007bff; }
+.btn.orange { background: #ff6a00; }
+.btn.green { background: #28a745; }
+.btn.gray { background: #555; }
+
+/* Completed Orders */
+.completed-list {
+  margin-top: 10px;
+}
+
+.completed-card {
+  background: white;
+  padding: 14px;
+  
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.done-icon {
+  width: 20px;
+  height: 20px;
+  color: #28a745;
+}
+
+
+.stats-table,
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.stats-table th,
+.stats-table td,
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.orders-table td div {
+  text-align: left;
+}
+
+.stats-table th,
+.orders-table th {
+  background: #f3f4f6;
+  font-weight: bold;
+}

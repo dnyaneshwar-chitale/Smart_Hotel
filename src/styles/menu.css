@@ -1,0 +1,48 @@
+
+.menu-container {
+    margin-left: 220px;          
+    width: calc(100% - 260px);
+    padding: 20px;
+    max-width: 100%;
+   
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Card Wrapper */
+.menu-card-wrapper {
+    padding: 10px;
+    height: 100%;
+}
+
+/* No items found */
+.no-items {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 22px;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* Responsive Fix */
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
